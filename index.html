@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="charlesmarshall" />	
+	
+	<link rel="icon" type="image/gif" href="/favicon.ico" />
+	<link rel="stylesheet" href="http://tinyjs.com/files/projects/simple-jquery-form-validation/styles.css" type="text/css" media="screen" charset="utf-8" />
+	<script src="http://tinyjs.com/files/projects/simple-jquery-form-validation/jquery.js" type="text/javascript" charset="utf-8"></script><script src="http://tinyjs.com/files/projects/simple-jquery-form-validation/validator.js" type="text/javascript" charset="utf-8"></script>	
+	
+	<title>Simple jQuery form validation</title>
+	
+</head>
+
+<body>
+	<body>
+<h3>Simple jQuery form validation</h3>
+<p>Easy setup, create a form with a class of 'validate'.</p>
+<p>Then give each form element you wish to validate a class of validate along with one of these choices...</p>
+<ul>
+  <li>valid-required</li>
+  <li>valid-number</li>
+  <li>valid-date</li>
+  <li>valid-email</li>
+</ul>
+<p>Then add the following to your global javascript file....</p>
+<pre>
+  $(document).ready(function() {
+    $("form.validate").validate();
+  });
+</pre>
+<p>
+  See the form below for an example. Styles for error messages can be edited too.
+</p>
+<form action="" class="validate">
+  <ul class="form">
+    <li>
+      <label for="name">Name:</label>
+      <input class="validate valid-required" name="name" id="name" type="text" maxlength="20" value=""  />
+    </li>
+    <li>
+      <label for="telephone">Telephone Number:</label>
+      <input class="validate valid-number" name="password" id="telephone" type="text" maxlength="20"  />
+    </li>
+    <li>
+      <label for="dob">Date of birth: (dd/mm/yyyy)</label>
+      <input class="validate valid-date" name="dob" id="dob" type="dob" maxlength="20"  />
+    </li>
+    <li>
+      <label for="email">email:</label>
+      <input class="validate valid-email" name="email" id="email" type="email" maxlength="20"  />
+    </li>
+    <li>
+      <input type="submit" name="submit" value="Submit" id="submit" />
+    </li>
+  </ul>
+</form>
+<p> feel free to use the code. A link back would be nice</p>    
+
+<script type="text/javascript">
+	var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+	try {
+	var pageTracker = _gat._getTracker("UA-2549287-19");
+	pageTracker._trackPageview();
+	} catch(err) {}
+</script>
+</body>
+	
+	<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+		var pageTracker = _gat._getTracker("UA-2549287-19");
+		pageTracker._trackPageview();
+		} catch(err) {}
+	</script>
+</body>
+</html>
+
+	
